@@ -1,13 +1,13 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- *main function- out puts "programming is like building a multilingual puzzle"
+ *main - Entry point
  *
- * Returns: value 0
+ * Returns: Always 0 (Success)
  */
 int main(void)
 {
-	puts ("\"Programming is like building a multilingual puzzle");
+	puts("\"Programming is like building a multilingual puzzle"\n);
 
 	return(0);
 }
