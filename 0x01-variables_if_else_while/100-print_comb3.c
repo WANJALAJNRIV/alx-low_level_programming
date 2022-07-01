@@ -8,11 +8,9 @@
  */
 int main(void)
 {
-	int i;
-	int j;
+	int m;
+	int n;
 
-	i = 48;
-	j = 49;
 	for (n = 48; n <= 56; n++)
 	{
 		for (m = 49; m <= 57; m++)
@@ -24,7 +22,7 @@ int main(void)
 				if (n != 56 || m != 57)
 				{
 					putchar(',');
-					puchar(' ');
+					putchar(' ');
 				}
 			}
 		}
