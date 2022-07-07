@@ -10,7 +10,7 @@
 
 void print_triangle(int size)
 {
-	int row, space;
+	int i, j;
 
 	if (size <= 0)
 	{
@@ -18,21 +18,21 @@ void print_triangle(int size)
 	}
 	else
 	{
-	for (row = 0; row < size; row++)
-	{
-		for (space = (size - 1); space >= 0; space--)
+		for (i = 1; i  <= size; i++)
 		{
-			if (space <= row)
+			for (j = 1; j <= size; j++)
 			{
-				putchar('#');
+				if (j <= (size - 1))
+				{
+					putchar(' ');
+				}
+				else
+				{
+					putchar('#');
+				}
 			}
-			else
-			{
-				putchar(' ');
-			}
+			putchar('\n');
 		}
-		putchar('\n');
-	}
 
 	}
 }
