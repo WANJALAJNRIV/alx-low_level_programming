@@ -1,0 +1,18 @@
+#include "main.h"
+
+/**
+ * print_number - function outputs digits 0-9
+ *
+ * Return: 0 (Success)
+ */
+
+void print_number(void)
+{
+	int num;
+
+	for (num = 0; numm < 10; num++)
+	{
+		putchar(num + '0');
+	}
+		putchar('\n');
+}
