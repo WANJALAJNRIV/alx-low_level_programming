@@ -10,25 +10,23 @@
 
 void print_diagonal(int n)
 {
-	int row, blank;
+	int i;
+	int b;
 
-	if (n <= 0)
+	if (n > 0)
 	{
-		_putchar('\n');
+		for (i = 0; i < n; i++)
+		{
+			for (b = 0; b < i; b++)
+			{
+				_putchar (' ');
+			}
+			_putchar (92);
+			_putchar ('\n');
+		}
 	}
 	else
 	{
-	for (row = 1; row <= n; row++)
-	{
-		for (blank = 1; blank <= n; blank++)
-		{
-			if (space < row)
-			{
-				_putchar(' ');
-			}
-		}
-		_putchar('\\');
-		_putchar('\n');
-	}
+		_putchar ('\n');
 	}
 }
