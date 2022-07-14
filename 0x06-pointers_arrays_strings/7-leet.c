@@ -1,32 +1,29 @@
 #include "main.h"
-
 /**
- * leet - capitalizes all words in a string
- * @s: string to capitalize
+ * leet - encodes a string
+ * @str: the string to encode
  *
- * Return: address of s
+ * Return: the encode string
  */
-char *leet(char *s)
+char *leet(char *str)
 {
-	int i = 0, j;
-	char a[] = " \t\n,;.!?\"(){}";
+	int i, j;
+	char c[] = "aAeEoOtTlL";
+	char n[] = "4433007711";
 
-	while (*(s + i))
+	i = 0;
+	while (str[i] != '\0')
 	{
-		if (*(s + i) >= 'a' && *(s + i) <= 'z')
+		j = 0;
+		while (c[j] != '\0')
 		{
-			if (i == 0)
-				*(s + i) -= 'a' - 'A';
-			else
+			if (str[i] == c[j])
 			{
-				for (j = 0; j <= 12; j++)
-				{
-					if (a[j] == *(s + i - 1))
-						*(s + i) -= 'a' - 'A';
-				}
+				str[i] = n[j];
 			}
+			j++;
 		}
 		i++;
 	}
-	return (s);
+	return (str);
 }
