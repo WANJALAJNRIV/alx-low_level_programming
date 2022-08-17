@@ -1,4 +1,4 @@
-i#include "lists.h"
+#include "lists.h"
 #include <stdlib.h>
 #include <stdio.h>
 
